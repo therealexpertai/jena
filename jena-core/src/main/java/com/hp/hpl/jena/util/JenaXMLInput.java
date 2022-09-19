@@ -23,12 +23,15 @@ import java.io.Reader;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.FactoryConfigurationError;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.TransformerFactoryConfigurationError;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -131,4 +134,13 @@ public class JenaXMLInput {
 //        builder.setExpandEntities(false);
 //        return builder;
 //    }
+    
+    // EXPERT.AI additional helpers, following OWASP recommendations
+        
+	public static TransformerFactory newTransformerFactory() throws TransformerFactoryConfigurationError {
+		TransformerFactory tf = TransformerFactory.newInstance();
+		tf.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
+		tf.setAttribute(XMLConstants.ACCESS_EXTERNAL_STYLESHEET, "");
+		return tf;
+	}
 }

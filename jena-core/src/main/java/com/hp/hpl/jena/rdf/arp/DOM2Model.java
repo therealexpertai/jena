@@ -31,6 +31,7 @@ import org.xml.sax.SAXParseException;
 
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.shared.JenaException;
+import com.hp.hpl.jena.util.JenaXMLInput;
 
 /**
  * Transform DOM nodes of RDF.XML into Jena Models. Known not to work with Java
@@ -97,7 +98,8 @@ public class DOM2Model extends SAX2Model {
         output.setLexicalHandler(this);
 
         // Run transform
-        TransformerFactory xformFactory = TransformerFactory.newInstance();
+//        TransformerFactory xformFactory = TransformerFactory.newInstance();
+        TransformerFactory xformFactory = JenaXMLInput.newTransformerFactory();
         try {
             Transformer idTransform = xformFactory.newTransformer();
             idTransform.transform(input, output);

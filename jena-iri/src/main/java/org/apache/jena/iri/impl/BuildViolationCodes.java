@@ -20,6 +20,7 @@ package org.apache.jena.iri.impl;
 
 import java.io.File;
 
+import javax.xml.XMLConstants;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
@@ -36,7 +37,7 @@ public class BuildViolationCodes {
      */
     public static void main(String[] args) throws TransformerException, TransformerFactoryConfigurationError {
         Transformer xsl =
-        TransformerFactory.newInstance().newTransformer(
+                newTransformerFactory().newTransformer(
                 new StreamSource(new File("src/main/xml/org/apache/jena/iri/impl/viol2java.xsl"))
                 );
         xsl.transform(
@@ -45,4 +46,12 @@ public class BuildViolationCodes {
                         
         );
     }
+    
+    // EXPERT.AI: credits https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html
+    private static TransformerFactory newTransformerFactory() throws TransformerFactoryConfigurationError {
+		TransformerFactory tf = TransformerFactory.newInstance();
+		tf.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
+		tf.setAttribute(XMLConstants.ACCESS_EXTERNAL_STYLESHEET, "");
+		return tf;
+	}
 }
