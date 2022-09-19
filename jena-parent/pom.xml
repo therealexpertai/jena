@@ -22,7 +22,7 @@
   <artifactId>jena-parent</artifactId>
   <packaging>pom</packaging>
   <url>http://jena.apache.org/</url>
-  <version>6</version>
+  <version>6-EXPERT.AI</version>
   <name>Apache Jena - Parent</name>
 
   <parent>
@@ -55,7 +55,7 @@
     <ver.log4j>1.2.16</ver.log4j>
     <ver.junit>4.11</ver.junit>
 
-    <ver.xerces>2.11.0</ver.xerces>
+    <ver.xerces>2.12.2</ver.xerces>
     <ver.httpclient>4.2.3</ver.httpclient>
 
     <jdk.version>1.6</jdk.version>
@@ -140,6 +140,13 @@
             <optimize>true</optimize>
             <source>${jdk.version}</source>
             <target>${jdk.version}</target>
+            <!-- compilerArgs>
+            	<arg>-Werror</arg>
+            	<arg>-Xlint:sunapi</arg>
+            	<arg>-XDenableSunApiLintControl</arg>
+            	<arg>-XDignore.symbol.file</arg>
+            </compilerArgs -->
+            <compilerArgument>-XDignore.symbol.file</compilerArgument>
           </configuration>
         </plugin>
         
