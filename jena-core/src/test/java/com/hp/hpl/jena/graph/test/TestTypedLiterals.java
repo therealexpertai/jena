@@ -25,7 +25,7 @@ import java.util.* ;
 
 import junit.framework.TestCase ;
 import junit.framework.TestSuite ;
-import org.apache.xerces.impl.dv.util.HexBin ;
+import com.sun.org.apache.xerces.internal.impl.dv.util.HexBin ;
 import org.junit.Assert ;
 
 import com.hp.hpl.jena.datatypes.BaseDatatype ;

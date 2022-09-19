@@ -18,7 +18,7 @@
 
 package com.hp.hpl.jena.datatypes.xsd;
 
-import org.apache.xerces.impl.dv.util.Base64 ;
+import com.sun.org.apache.xerces.internal.impl.dv.util.Base64 ;
 
 import com.hp.hpl.jena.datatypes.DatatypeFormatException ;
 

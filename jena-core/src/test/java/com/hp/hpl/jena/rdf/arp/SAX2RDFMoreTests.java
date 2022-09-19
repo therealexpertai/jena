@@ -24,7 +24,7 @@ import java.util.Arrays;
 
 import junit.framework.TestCase;
 
-import org.apache.xerces.parsers.SAXParser;
+import com.sun.org.apache.xerces.internal.parsers.SAXParser;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXParseException;
 import org.xml.sax.XMLReader;

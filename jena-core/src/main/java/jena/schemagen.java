@@ -33,7 +33,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-import org.apache.xerces.util.XMLChar;
+import com.sun.org.apache.xerces.internal.util.XMLChar;
 import org.slf4j.LoggerFactory;
 
 import com.hp.hpl.jena.ontology.*;

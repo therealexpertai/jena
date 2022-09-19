@@ -18,8 +18,8 @@
 
 package com.hp.hpl.jena.sparql.expr;
 
-import org.apache.xerces.impl.xpath.regex.ParseException ;
-import org.apache.xerces.impl.xpath.regex.RegularExpression ;
+import com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException ;
+import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression ;
 
 public class RegexXerces implements RegexEngine
 {

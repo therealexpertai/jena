@@ -19,7 +19,7 @@
 package com.hp.hpl.jena.rdf.model.impl;
 import java.util.regex.*;
 
-import org.apache.xerces.util.XMLChar;
+import com.sun.org.apache.xerces.internal.util.XMLChar;
 
 import com.hp.hpl.jena.shared.*;
 

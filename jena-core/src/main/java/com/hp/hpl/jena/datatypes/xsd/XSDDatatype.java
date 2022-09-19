@@ -25,20 +25,20 @@ import java.net.URI;
 import java.util.ArrayList ;
 import java.util.List ;
 
-import org.apache.xerces.impl.dv.* ;
-import org.apache.xerces.impl.dv.util.Base64 ;
-import org.apache.xerces.impl.dv.util.HexBin ;
-import org.apache.xerces.impl.dv.xs.DecimalDV ;
-import org.apache.xerces.impl.dv.xs.XSSimpleTypeDecl ;
-import org.apache.xerces.impl.validation.ValidationState ;
-import org.apache.xerces.parsers.XMLGrammarPreparser ;
-import org.apache.xerces.util.SymbolHash ;
-import org.apache.xerces.xni.grammars.XMLGrammarDescription ;
-import org.apache.xerces.xni.grammars.XSGrammar ;
-import org.apache.xerces.xni.parser.XMLInputSource ;
-import org.apache.xerces.xs.XSConstants ;
-import org.apache.xerces.xs.XSNamedMap ;
-import org.apache.xerces.xs.XSTypeDefinition ;
+import com.sun.org.apache.xerces.internal.impl.dv.* ;
+import com.sun.org.apache.xerces.internal.impl.dv.util.Base64 ;
+import com.sun.org.apache.xerces.internal.impl.dv.util.HexBin ;
+import com.sun.org.apache.xerces.internal.impl.dv.xs.DecimalDV ;
+import com.sun.org.apache.xerces.internal.impl.dv.xs.XSSimpleTypeDecl ;
+import com.sun.org.apache.xerces.internal.impl.validation.ValidationState ;
+import com.sun.org.apache.xerces.internal.parsers.XMLGrammarPreparser ;
+import com.sun.org.apache.xerces.internal.util.SymbolHash ;
+import com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription ;
+import com.sun.org.apache.xerces.internal.xni.grammars.XSGrammar ;
+import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource ;
+import com.sun.org.apache.xerces.internal.xs.XSConstants ;
+import com.sun.org.apache.xerces.internal.xs.XSNamedMap ;
+import com.sun.org.apache.xerces.internal.xs.XSTypeDefinition ;
 
 import com.hp.hpl.jena.datatypes.BaseDatatype ;
 import com.hp.hpl.jena.datatypes.DatatypeFormatException ;
@@ -362,7 +362,7 @@ public class XSDDatatype extends BaseDatatype {
         parser.registerPreparser(XMLGrammarDescription.XML_SCHEMA, null);
         try {
             XSGrammar xsg = (XSGrammar) parser.preparseGrammar(XMLGrammarDescription.XML_SCHEMA, source);
-            org.apache.xerces.xs.XSModel xsm = xsg.toXSModel();
+            com.sun.org.apache.xerces.internal.xs.XSModel xsm = xsg.toXSModel();
             XSNamedMap map = xsm.getComponents(XSTypeDefinition.SIMPLE_TYPE);
             int numDefs = map.getLength();
             ArrayList<String> names = new ArrayList<String>(numDefs);

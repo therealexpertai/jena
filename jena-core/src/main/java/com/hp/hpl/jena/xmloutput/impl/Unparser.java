@@ -118,7 +118,7 @@ package com.hp.hpl.jena.xmloutput.impl;
 import java.io.PrintWriter;
 import java.util.*;
 
-import org.apache.xerces.util.XMLChar;
+import com.sun.org.apache.xerces.internal.util.XMLChar;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

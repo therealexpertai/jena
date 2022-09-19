@@ -23,9 +23,9 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.UTFDataFormatException;
 
-import org.apache.xerces.parsers.SAXParser;
-import org.apache.xerces.parsers.StandardParserConfiguration;
-import org.apache.xerces.xni.Augmentations;
+import com.sun.org.apache.xerces.internal.parsers.SAXParser;
+import com.sun.org.apache.xerces.internal.parsers.StandardParserConfiguration;
+import com.sun.org.apache.xerces.internal.xni.Augmentations;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;

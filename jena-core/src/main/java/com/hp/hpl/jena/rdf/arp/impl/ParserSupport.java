@@ -27,7 +27,8 @@ package com.hp.hpl.jena.rdf.arp.impl;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.xerces.util.XMLChar;
+import com.sun.org.apache.xerces.internal.util.XMLChar;
+
 import org.xml.sax.SAXParseException;
 
 import org.apache.jena.iri.IRI;

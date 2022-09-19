@@ -18,7 +18,7 @@
 
 package com.hp.hpl.jena.datatypes.xsd;
 
-import org.apache.xerces.impl.dv.util.HexBin ;
+import com.sun.org.apache.xerces.internal.impl.dv.util.HexBin ;
 
 import com.hp.hpl.jena.datatypes.DatatypeFormatException ;
 

@@ -25,7 +25,7 @@ import com.hp.hpl.jena.util.CollectionFactory;
 import java.util.*;
 import java.util.Map.Entry;
 
-import org.apache.xerces.util.XMLChar;
+import com.sun.org.apache.xerces.internal.util.XMLChar;
 
 /**
     An implementation of PrefixMapping. The mappings are stored in a pair

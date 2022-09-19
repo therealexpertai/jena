@@ -28,7 +28,7 @@ import java.util.regex.Pattern ;
 
 import org.apache.jena.iri.IRI ;
 import org.apache.jena.iri.IRIFactory ;
-import org.apache.xerces.util.XMLChar ;
+import com.sun.org.apache.xerces.internal.util.XMLChar ;
 import org.slf4j.Logger ;
 import org.slf4j.LoggerFactory ;
 

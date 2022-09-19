@@ -22,11 +22,11 @@ import java.util.regex.Pattern ;
 
 import org.apache.jena.riot.SysRIOT ;
 import org.apache.jena.riot.system.ErrorHandler ;
-import org.apache.xerces.impl.dv.InvalidDatatypeValueException ;
-import org.apache.xerces.impl.dv.ValidatedInfo ;
-import org.apache.xerces.impl.dv.ValidationContext ;
-import org.apache.xerces.impl.dv.XSSimpleType ;
-import org.apache.xerces.impl.validation.ValidationState ;
+import com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException ;
+import com.sun.org.apache.xerces.internal.impl.dv.ValidatedInfo ;
+import com.sun.org.apache.xerces.internal.impl.dv.ValidationContext ;
+import com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType ;
+import com.sun.org.apache.xerces.internal.impl.validation.ValidationState ;
 
 import com.hp.hpl.jena.datatypes.RDFDatatype ;
 import com.hp.hpl.jena.datatypes.xsd.impl.XSDAbstractDateTimeType ;

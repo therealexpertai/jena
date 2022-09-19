@@ -18,7 +18,7 @@
 
 package com.hp.hpl.jena.datatypes.xsd.impl;
 
-import org.apache.xerces.impl.dv.XSSimpleType;
+import com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType;
 
 import com.hp.hpl.jena.datatypes.xsd.*;
 

@@ -21,7 +21,7 @@ package com.hp.hpl.jena.reasoner.rulesys.builtins;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import org.apache.xerces.impl.dv.util.Base64;
+import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.NodeFactory ;
