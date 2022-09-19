@@ -22,12 +22,12 @@
   <artifactId>jena-core</artifactId>
   <packaging>jar</packaging>
   <name>Apache Jena - CORE API</name>
-  <version>2.10.1</version>
+  <version>2.10.1-EXPERT.AI</version>
 
   <parent>
     <groupId>org.apache.jena</groupId>
     <artifactId>jena-parent</artifactId>
-    <version>6</version>
+    <version>6-EXPERT.AI</version>
     <relativePath>../jena-parent</relativePath>
   </parent>
 
@@ -56,14 +56,14 @@
     <dependency>
        <groupId>org.apache.jena</groupId>
        <artifactId>jena-iri</artifactId>
-       <version>0.9.6</version>
+       <version>0.9.6-EXPERT.AI</version>
     </dependency>
 
-     <dependency>
+     <!-- dependency>
        <groupId>xerces</groupId>
        <artifactId>xercesImpl</artifactId>
        <version>${ver.xerces}</version>
-     </dependency>
+     </dependency -->
 
   </dependencies>
 
@@ -98,7 +98,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-      </plugin>
+       </plugin>
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
